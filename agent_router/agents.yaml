@@ -1,0 +1,1003 @@
+# Agent Router Configuration
+# Defines all 37 specialized agents with routing keywords
+
+engineering:
+  - name: Frontend Developer
+    description: Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization
+    keywords:
+      - react
+      - vue
+      - angular
+      - frontend
+      - javascript
+      - typescript
+      - css
+      - html
+      - ui
+      - component
+      - responsive
+      - webpack
+      - vite
+      - tailwind
+      - styled-components
+      - next.js
+      - nuxt
+      - svelte
+      - toggle
+      - button
+      - navigation
+      - navigation menu
+      - styling
+      - css styling
+      - mobile
+      - progressive web app
+      - pwa
+      - web app
+      - bundle
+      - optimize bundle
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-frontend-developer.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Backend Architect
+    description: Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure
+    keywords:
+      - backend
+      - api
+      - rest
+      - graphql
+      - database
+      - postgresql
+      - mongodb
+      - mysql
+      - redis
+      - microservices
+      - node.js
+      - python
+      - django
+      - flask
+      - fastapi
+      - express
+      - architecture
+      - scalability
+      - server
+      - endpoint
+      - jwt
+      - authentication
+      - auth
+      - database queries
+      - query optimization
+      - optimize database
+      - performance
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-backend-architect.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: AI Engineer
+    description: Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems
+    keywords:
+      - ai
+      - ml
+      - machine learning
+      - deep learning
+      - model
+      - neural network
+      - tensorflow
+      - pytorch
+      - scikit-learn
+      - llm
+      - rag
+      - vector database
+      - embedding
+      - fine-tune
+      - fine-tuning
+      - fine-tune llm
+      - llm fine-tuning
+      - llm training
+      - model training
+      - sentiment analysis
+      - nlp
+      - natural language processing
+      - nla processing system
+      - computer vision
+      - recommendation
+      - recommendation engine
+      - collaborative filtering
+      - prediction
+      - forecasting
+      - time series
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-ai-engineer.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Senior Developer
+    description: Experienced senior developer for complex systems, architecture decisions, and general development tasks
+    keywords:
+      - general
+      - refactor
+      - architecture
+      - senior
+      - complex
+      - system
+      - improve
+      - optimize
+      - review
+      - mentor
+      - help
+      - project
+      - bug
+      - code quality
+      - build system
+      - build authentication system
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-senior-developer.md
+    category: engineering
+    is_default: true
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Mobile App Builder
+    description: Expert mobile app developer for iOS, Android, React Native, and Flutter applications
+    keywords:
+      - mobile
+      - ios
+      - android
+      - swift
+      - kotlin
+      - react native
+      - flutter
+      - app
+      - mobile app
+      - cross-platform
+      - native
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-mobile-app-builder.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: DevOps Automator
+    description: DevOps specialist for CI/CD, infrastructure automation, Docker, Kubernetes, and deployment pipelines
+    keywords:
+      - devops
+      - ci/cd
+      - docker
+      - kubernetes
+      - deployment
+      - infrastructure
+      - terraform
+      - ansible
+      - jenkins
+      - github actions
+      - gitlab ci
+      - automation
+      - monitoring
+      - lambda
+      - aws lambda
+      - aws
+      - cloud functions
+      - prometheus
+      - grafana
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-devops-automator.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Rapid Prototyper
+    description: Quick prototype builder for MVPs, proof of concepts, and rapid testing of ideas
+    keywords:
+      - prototype
+      - mvp
+      - proof of concept
+      - quick
+      - rapid
+      - demo
+      - mockup
+      - poc
+      - quick prototype
+      - rapid prototype
+      - build prototype
+      - functional demo
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/engineering/engineering-rapid-prototyper.md
+    category: engineering
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+design:
+  - name: UI Designer
+    description: Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation
+    keywords:
+      - ui
+      - design system
+      - component library
+      - visual design
+      - typography
+      - color
+      - token
+      - figma
+      - sketch
+      - interface
+      - pixel-perfect
+      - responsive grid
+      - theme
+      - grid
+      - dark mode theme
+      - design dark mode
+      - visual hierarchy
+      - establish visual hierarchy
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-ui-designer.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: UX Architect
+    description: UX specialist for user flows, wireframes, information architecture, and interaction design
+    keywords:
+      - ux
+      - user experience
+      - user flow
+      - wireframe
+      - information architecture
+      - interaction design
+      - navigation
+      - usability
+      - design user flow
+      - user flow for checkout
+      - create wireframes
+      - wireframes for
+      - map user journey
+      - user journey
+      - interaction patterns
+      - navigation structure
+      - design information architecture
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-ux-architect.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: UX Researcher
+    description: User research specialist for usability testing, user interviews, and feedback analysis
+    keywords:
+      - user research
+      - usability testing
+      - user interview
+      - feedback
+      - persona
+      - research study
+      - a/b testing
+      - run usability testing
+      - usability testing sessions
+      - user personas
+      - create user personas
+      - a/b testing analysis
+      - user feedback
+      - insights
+      - analyze user feedback and insights
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-ux-researcher.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Brand Guardian
+    description: Brand identity specialist for brand guidelines, visual identity, and brand consistency
+    keywords:
+      - brand
+      - branding
+      - brand identity
+      - brand guidelines
+      - logo
+      - visual identity
+      - brand voice
+      - style guide
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-brand-guardian.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Visual Storyteller
+    description: Visual narrative specialist for infographics, presentations, and visual content strategy
+    keywords:
+      - visual narrative
+      - storytelling
+      - infographic
+      - presentation
+      - visual content
+      - slides
+      - design infographics
+      - infographics for
+      - visual stories
+      - compelling visual stories
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-visual-storyteller.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Whimsy Injector
+    description: Playful design specialist for animations, micro-interactions, and delightful user experiences
+    keywords:
+      - animation
+      - micro-interaction
+      - playful
+      - delight
+      - easter egg
+      - whimsy
+      - fun
+      - fun easter eggs
+      - design fun easter eggs
+      - error messages
+      - personality to error
+      - whimsical loading
+      - loading states
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/design/design-whimsy-injector.md
+    category: design
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+testing:
+  - name: Reality Checker
+    description: Integration specialist who validates production readiness with evidence-based assessment
+    keywords:
+      - qa
+      - quality assurance
+      - validation
+      - production ready
+      - integration testing
+      - verify
+      - check
+      - validate
+      - test
+      - testing
+      - user journey
+      - specifications
+      - cross-browser
+      - compatibility
+      - browser compatibility
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-reality-checker.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: API Tester
+    description: API testing specialist for endpoint testing, schema validation, and API quality assurance
+    keywords:
+      - api test
+      - endpoint test
+      - rest test
+      - graphql test
+      - api validation
+      - schema validation
+      - test rest api
+      - test api endpoints
+      - test api
+      - validate api
+      - api response
+      - api testing
+      - test graphql
+      - api load testing
+      - test rest api endpoints
+      - api endpoint testing
+      - perform api load testing
+      - test api authentication
+      - api authentication
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-api-tester.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Performance Benchmarker
+    description: Performance testing specialist for load testing, benchmarking, and performance optimization
+    keywords:
+      - performance
+      - benchmark
+      - load test
+      - stress test
+      - speed
+      - optimization
+      - profiling
+      - page load
+      - core web vitals
+      - benchmark application
+      - test page load
+      - performance testing
+      - load testing
+      - optimize application performance
+      - profile memory usage
+      - profile memory
+      - profile cpu
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-performance-benchmarker.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Evidence Collector
+    description: Testing documentation specialist for screenshots, test reports, and evidence gathering
+    keywords:
+      - screenshot
+      - evidence
+      - documentation
+      - test report
+      - visual proof
+      - collect evidence
+      - testing evidence
+      - qa documentation
+      - test documentation
+      - capture screenshots
+      - comprehensive test reports
+      - create test reports
+      - gather evidence
+      - evidence for bug reports
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-evidence-collector.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Test Results Analyzer
+    description: Test analysis specialist for coverage reports, test trends, and quality metrics
+    keywords:
+      - test results
+      - code coverage
+      - test analysis
+      - quality metrics
+      - test trends
+      - analyze test suite
+      - test suite results
+      - analyze test
+      - coverage reports
+      - review code coverage
+      - failing test patterns
+      - test patterns
+      - testing insights
+      - generate testing insights
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-test-results-analyzer.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Tool Evaluator
+    description: Development tool evaluation specialist for comparing frameworks, tools, and technologies
+    keywords:
+      - tool evaluation
+      - framework comparison
+      - technology assessment
+      - tool recommendation
+      - evaluate testing tools
+      - evaluate tools
+      - compare test automation
+      - assess ci/cd tools
+      - compare frameworks
+      - assess tools
+      - evaluate testing tools for project
+      - evaluate tools for
+      - development tool options
+      - tool options
+      - recommend tools
+      - recommend best tools
+      - best tools for workflow
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-tool-evaluator.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Workflow Optimizer
+    description: Workflow optimization specialist for process improvement and efficiency gains
+    keywords:
+      - workflow optimization
+      - process improvement
+      - efficiency
+      - streamline
+      - optimize workflow
+      - optimize development workflow
+      - improve team collaboration
+      - streamline deployment
+      - workflow efficiency
+      - enhance testing workflow
+      - ci/cd pipeline
+      - optimize ci/cd
+      - optimize ci/cd pipeline
+      - improve ci/cd
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/testing/testing-workflow-optimizer.md
+    category: testing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+marketing:
+  - name: Content Creator
+    description: Content writing specialist for blog posts, social media, and marketing copy
+    keywords:
+      - content
+      - blog post
+      - article
+      - copywriting
+      - writing
+      - marketing copy
+      - email
+      - landing page
+      - product description
+      - product descriptions
+      - write product descriptions
+      - technical documentation
+      - write technical documentation
+      - social media content
+      - create social media content
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-content-creator.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Social Media Strategist
+    description: Social media strategy specialist for content calendars, campaigns, and platform growth
+    keywords:
+      - social media
+      - content calendar
+      - social strategy
+      - campaign
+      - social presence
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-social-media-strategist.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Growth Hacker
+    description: Growth marketing specialist for viral loops, conversion optimization, and user acquisition
+    keywords:
+      - growth
+      - growth hacking
+      - viral
+      - conversion
+      - funnel
+      - acquisition
+      - experiment
+      - growth experiments
+      - design growth experiments
+      - viral growth
+      - conversion optimization
+      - user acquisition strategies
+      - acquisition strategies
+      - user acquisition
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-growth-hacker.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Twitter Engager
+    description: Twitter marketing specialist for tweet creation, engagement, and community building
+    keywords:
+      - twitter
+      - tweet
+      - x
+      - twitter marketing
+      - twitter community
+      - twitter content strategy
+      - twitter content
+      - create twitter content
+      - twitter engagement
+      - write tweets
+      - write engaging tweets
+      - engaging tweets
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-twitter-engager.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Instagram Curator
+    description: Instagram marketing specialist for visual content, stories, and Instagram growth
+    keywords:
+      - instagram
+      - insta
+      - instagram post
+      - instagram story
+      - instagram marketing
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-instagram-curator.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: TikTok Strategist
+    description: TikTok marketing specialist for viral video concepts and TikTok growth
+    keywords:
+      - tiktok
+      - tik tok
+      - short video
+      - viral video
+      - tiktok marketing
+      - tiktok content strategy
+      - create tiktok content
+      - tiktok strategy
+      - tiktok video
+      - tiktok campaigns
+      - viral tiktok
+      - viral tiktok campaigns
+      - plan viral tiktok
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-tiktok-strategist.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Reddit Community Builder
+    description: Reddit marketing specialist for community engagement and subreddit growth
+    keywords:
+      - reddit
+      - subreddit
+      - reddit community
+      - ama
+      - reddit marketing
+      - reddit content
+      - create reddit content
+      - reddit posts
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-reddit-community-builder.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: App Store Optimizer
+    description: App store optimization specialist for ASO, app listings, and conversion optimization
+    keywords:
+      - app store
+      - aso
+      - app store optimization
+      - app listing
+      - app description
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/marketing/marketing-app-store-optimizer.md
+    category: marketing
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+product:
+  - name: Sprint Prioritizer
+    description: Product management specialist for feature prioritization, backlog management, and sprint planning
+    keywords:
+      - prioritize
+      - sprint
+      - backlog
+      - feature priority
+      - sprint planning
+      - roadmap
+      - rank
+      - rank feature requests
+      - rank features
+      - prioritize bug fixes
+      - bug fixes vs features
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/product/product-sprint-prioritizer.md
+    category: product
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Feedback Synthesizer
+    description: User feedback specialist for analyzing feedback, extracting insights, and feature requests
+    keywords:
+      - feedback
+      - user feedback
+      - insights
+      - feature request
+      - user research
+      - synthesize
+      - review feature requests
+      - feature requests
+      - categorize user complaints
+      - user complaints
+      - analyze user feedback
+      - extract insights from user research
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/product/product-feedback-synthesizer.md
+    category: product
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Trend Researcher
+    description: Market research specialist for trend analysis, competitor research, and industry insights
+    keywords:
+      - trend
+      - market research
+      - competitor
+      - industry
+      - research
+      - analysis
+      - emerging technologies
+      - identify emerging technologies
+      - emerging tech
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/product/product-trend-researcher.md
+    category: product
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+support:
+  - name: Support Responder
+    description: Customer support specialist for tickets, inquiries, and technical support
+    keywords:
+      - support
+      - customer support
+      - ticket
+      - inquiry
+      - help
+      - assistance
+      - user questions
+      - respond to questions
+      - customer inquiries
+      - handle inquiries
+      - support documentation
+      - create support documentation
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-support-responder.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Analytics Reporter
+    description: Analytics specialist for metrics, KPIs, dashboards, and business intelligence
+    keywords:
+      - analytics
+      - metrics
+      - kpi
+      - dashboard
+      - report
+      - data analysis
+      - dashboard for kpis
+      - create dashboard for kpis
+      - analytics dashboard
+      - conversion data
+      - analyze conversion data
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-analytics-reporter.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Finance Tracker
+    description: Financial tracking specialist for budgets, expenses, and financial reporting
+    keywords:
+      - finance
+      - budget
+      - expense
+      - financial
+      - revenue
+      - cost
+      - track expenses
+      - track project expenses
+      - project expenses
+      - financial reports
+      - revenue metrics
+      - analyze revenue metrics
+      - financial projections
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-finance-tracker.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Infrastructure Maintainer
+    description: Infrastructure maintenance specialist for servers, uptime, and system reliability
+    keywords:
+      - infrastructure
+      - server
+      - uptime
+      - maintenance
+      - reliability
+      - monitoring
+      - maintain infrastructure
+      - maintain production infrastructure
+      - production infrastructure
+      - server health
+      - system dependencies
+      - update dependencies
+      - cloud resources
+      - manage cloud resources
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-infrastructure-maintainer.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Legal Compliance Checker
+    description: Legal compliance specialist for GDPR, privacy policies, and regulatory requirements
+    keywords:
+      - legal
+      - compliance
+      - gdpr
+      - privacy
+      - terms of service
+      - licensing
+      - legal requirements
+      - check legal requirements
+      - privacy policy
+      - privacy policy adherence
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-legal-compliance-checker.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
+
+  - name: Executive Summary Generator
+    description: Executive communication specialist for summaries, briefings, and stakeholder reports
+    keywords:
+      - executive summary
+      - briefing
+      - stakeholder
+      - board meeting
+      - high-level
+      - overview
+      - summarize
+      - project status
+      - summarize project status
+    file_path: /Users/gaganarora/Desktop/gagan_projects/Agency/agency_agents/support/support-executive-summary-generator.md
+    category: support
+    is_default: false
+    protocols:
+      requirements_gathering_first: true
+      test_first_development: true
+      workflow_rules:
+        total: 11
+        mandatory: true
