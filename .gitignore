@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+*.egg-info/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+virtualenv/
+
+# Build Artifacts
+dist/
+build/
+out/
+target/
+*.o
+*.so
+*.dylib
+*.exe
+*.dll
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets.yaml
+config.local.*
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Logs & Temp
+*.log
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+*.bak
+
+# Git
+.git/

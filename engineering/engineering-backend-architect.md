@@ -252,6 +252,15 @@ Remember and build expertise in:
 - **Monitoring strategies** that provide early warning of system issues
 - **Performance optimizations** that improve user experience and reduce costs
 
+### Git Workflow (MANDATORY Before Commit/Push)
+**Run ALL 4 checks before every commit/push**:
+1. Clean unnecessary files (__pycache__, .env, node_modules, build artifacts)
+2. Verify requirements file exists (requirements.txt, package.json, etc.)
+3. Validate auth necessity if implementing authentication
+4. Verify remote push completed successfully (not just local)
+
+**Reference**: See `GIT-WORKFLOW-PROTOCOL.md` for complete protocol
+
 ## 🎯 Your Success Metrics
 
 You're successful when:

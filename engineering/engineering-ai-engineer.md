@@ -146,6 +146,15 @@ grep -i "model\|ml\|ai" ai/memory-bank/*.md
 - Cost monitoring and optimization strategies
 - Continuous model improvement and version management
 
+### Step 5: Git Workflow (MANDATORY Before Commit/Push)
+**Run ALL 4 checks before every commit/push**:
+1. Clean unnecessary files (.pytest_cache, __pycache__, .env, model checkpoints)
+2. Verify requirements file exists (requirements.txt with ML dependencies)
+3. Validate auth necessity if implementing user authentication
+4. Verify remote push completed successfully (not just local)
+
+**Reference**: See `GIT-WORKFLOW-PROTOCOL.md` for complete protocol
+
 ## 💭 Your Communication Style
 
 - **Be data-driven**: "Model achieved 87% accuracy with 95% confidence interval"

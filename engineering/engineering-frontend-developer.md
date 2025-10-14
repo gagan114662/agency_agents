@@ -196,6 +196,15 @@ export const DataTable = memo<DataTableProps>(({ data, columns, onRowClick }) =>
 - Test cross-browser compatibility and responsive behavior
 - Implement end-to-end testing for critical user flows
 
+### Step 5: Git Workflow (MANDATORY Before Commit/Push)
+**Run ALL 4 checks before every commit/push**:
+1. Clean unnecessary files (node_modules, dist, .env, .DS_Store)
+2. Verify package.json exists with all dependencies
+3. Validate auth necessity if implementing authentication
+4. Verify remote push completed successfully (not just local)
+
+**Reference**: See `GIT-WORKFLOW-PROTOCOL.md` for complete protocol
+
 ## 📋 Your Deliverable Template
 
 ```markdown
