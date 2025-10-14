@@ -1,350 +1,542 @@
-# 🎭 The Agency: 51 AI Specialists Ready to Transform Your Workflow
+# 🤖 Development Workflow Protocol for Claude Code Agents
 
-> **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+> **Comprehensive development workflow enforcement system** - Transform Claude Code agents into disciplined, professional developers who follow best practices automatically.
 
-[![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Repository](https://img.shields.io/badge/repo-agency--agents-blue)](https://github.com/gagan114662/agency_agents)
 
 ---
 
-## 🚀 What Is This?
+## 🎯 What Is This?
 
-Born from a Reddit thread and months of iteration, **The Agency** is a collection of 51 meticulously crafted AI agent personalities. Each agent is:
+This repository contains a comprehensive **Development Workflow Protocol** that enforces professional development practices across all Claude Code engineering agents. It ensures that every agent follows best practices for requirements gathering, test-first development, git hygiene, and production-ready code delivery.
 
-- **🎯 Specialized**: Deep expertise in their domain (not generic prompt templates)
-- **🧠 Personality-Driven**: Unique voice, communication style, and approach
-- **📋 Deliverable-Focused**: Real code, processes, and measurable outcomes
-- **✅ Production-Ready**: Battle-tested workflows and success metrics
+### What Makes This Special
 
-**Think of it as**: Assembling your dream team, except they're AI specialists who never sleep, never complain, and always deliver.
+- **🚫 No Shortcuts**: Agents MUST gather requirements before coding
+- **✅ Test-First Always**: Tests written and approved before implementation
+- **📋 11 Mandatory Rules**: Every rule enforced for every task
+- **🔍 Bash Validation**: Independent verification of logic and calculations
+- **🎯 Production-Ready**: Clean code with no TODOs, debug statements, or commented code
+- **📝 Full Transparency**: TODO.md tracking for all tasks
 
 ---
 
-## ⚡ Quick Start
+## 📚 Repository Contents
 
-### Option 1: Use with Claude Code (Recommended)
+### Protocol Documentation (2,251 Lines Total)
+
+1. **[DEVELOPMENT-WORKFLOW-PROTOCOL.md](DEVELOPMENT-WORKFLOW-PROTOCOL.md)** (932 lines)
+   - Complete implementation of all 11 mandatory workflow rules
+   - Bash validation scripts for each rule
+   - Real-world examples and enforcement guidelines
+   - Quick reference commands and checklists
+
+2. **[tests/test_development_workflow.md](tests/test_development_workflow.md)** (1,183 lines)
+   - 11 comprehensive test scenarios
+   - Pass/fail criteria for each test
+   - Bash validation scripts included
+   - Edge case coverage
+
+3. **[TODO.md](TODO.md)** (136 lines)
+   - Project tracking with In Progress/Pending/Completed sections
+   - Complete milestone tracking
+   - Task completion history
+
+---
+
+## 🚀 The 11 Mandatory Workflow Rules
+
+Every engineering agent now enforces these rules for EVERY task:
+
+### Rule 1: Pre-Work Test Approval ✅
+- **ALWAYS** get user approval on tests BEFORE writing any implementation code
+- Tests must import from actual modules (no hardcoded values)
+- Ensures mutual understanding of expected behavior
+
+### Rule 2: Git Commit Checkpoint Protocol ✅
+- Ask user before creating git commits
+- Create commits at logical milestones
+- Follow 4 mandatory git checks before every push
+
+### Rule 3: Logging Standards Enforcement ✅
+- Use INFO level for production logging
+- DEBUG for development only
+- NO print() or console.log() in production code
+
+### Rule 4: Bash Test Validation for Math/Logic ✅
+- Create bash validation scripts for calculations
+- Independent verification of critical logic
+- Test edge cases and error handling
+
+### Rule 5: Code Organization Standards ✅
+- No duplicate functions across codebase
+- Proper file structure and organization
+- Single responsibility principle
+
+### Rule 6: Local Testing Before Deployment ✅
+- Run ALL tests locally
+- Verify 100% pass rate
+- Check coverage meets minimum threshold (80%+)
+
+### Rule 7: Production-Ready Code Standards ✅
+- No commented-out code blocks
+- No TODO/FIXME comments
+- No debug statements or logging
+
+### Rule 8: User Decision Points with Options ✅
+- Present options at key decision points
+- Include pros/cons for each option
+- Get user approval before proceeding
+
+### Rule 9: Copy-Paste Ready Commands ✅
+- All commands must be executable as-is
+- No placeholders like `<your-path>`
+- Use actual values and paths
+
+### Rule 10: Virtual Environment Management ✅
+- Use shared virtual environment
+- Path: `/Users/gagan/Desktop/gagan_projects/venv`
+- Python 3.13.7 with proper dependency management
+
+### Rule 11: TODO.md File Tracking ✅
+- Maintain TODO.md in project root
+- Track In Progress/Pending/Completed tasks
+- Update before and after each task
+
+---
+
+## 📦 Related Protocols
+
+This workflow protocol integrates with three prerequisite protocols:
+
+1. **REQUIREMENTS-GATHERING-PROTOCOL.md** (prerequisite)
+   - 10-question framework covering all aspects
+   - Mandatory before any coding begins
+   - Creates comprehensive project briefs
+
+2. **GIT-WORKFLOW-PROTOCOL.md** (integrated)
+   - 4 mandatory git checks before every commit/push
+   - Remote push verification
+   - File cleanup enforcement
+
+3. **TEST-FIRST-DEVELOPMENT.md** (integrated)
+   - TDD standards and best practices
+   - Test structure guidelines
+   - Language-specific examples
+
+---
+
+## 🤖 Updated Engineering Agents
+
+All engineering agents in `~/.claude/agents/engineering/` have been updated with the 11-rule workflow checklist:
+
+1. ✅ **engineering-senior-developer.md**
+2. ✅ **engineering-frontend-developer.md**
+3. ✅ **engineering-backend-architect.md**
+4. ✅ **engineering-ai-engineer.md**
+
+### What Changed
+
+Each agent now includes:
+- Complete 11-rule workflow checklist
+- Quick reference for all mandatory rules
+- Integration with Git Workflow Protocol
+- TODO.md tracking requirements
+- Virtual environment management instructions
+
+---
+
+## 📊 Implementation History
+
+### Commit Timeline
+
+#### [3b4e6fe](https://github.com/gagan114662/agency_agents/commit/3b4e6fe) - docs: Update TODO.md - mark all tasks as completed
+**Date**: 2024-10-14
+
+- All 11 tests written and verified
+- Protocol documentation complete (2,251 lines)
+- Engineering agents updated with workflow
+- Git commit created and pushed to remote
+- Remote push verified successfully
+
+---
+
+#### [5ac9144](https://github.com/gagan114662/agency_agents/commit/5ac9144) - feat: Add comprehensive Development Workflow Protocol with 11 mandatory rules
+**Date**: 2024-10-14
+
+**Major Features Added**:
+
+1. **Development Workflow Protocol** (MANDATORY for all agents)
+   - 11 mandatory workflow rules enforced for all tasks
+   - Pre-work test approval requirement
+   - Git commit checkpoint protocol
+   - Logging standards (INFO only, no print/debug)
+   - Bash validation for math/logic
+   - Code organization standards (no duplicates)
+   - Local testing requirements (100% pass rate)
+   - Production-ready code standards (no TODOs/comments)
+   - User decision points with options
+   - Copy-paste ready commands (no placeholders)
+   - Virtual environment management
+   - TODO.md file tracking
+
+2. **Complete Test Suite** (11 comprehensive tests)
+   - tests/test_development_workflow.md (1,183 lines)
+   - Bash validation scripts for each rule
+   - Pass/fail criteria documented
+   - Edge case coverage
+
+3. **Project Tracking System**
+   - TODO.md with In Progress/Pending/Completed sections
+   - Complete project history and milestones
+   - Task status tracking
+
+4. **Infrastructure Setup**
+   - Cloned aitutor project (https://github.com/vandanchopra/aitutor)
+   - Cloned ipop project (https://github.com/gagan114662/ipop)
+   - Created shared venv at /Users/gagan/Desktop/gagan_projects/venv
+   - Python 3.13.7 with dependencies installed
+
+5. **Engineering Agents Updated** (in ~/.claude/agents/)
+   - engineering-senior-developer.md
+   - engineering-frontend-developer.md
+   - engineering-backend-architect.md
+   - engineering-ai-engineer.md
+   - All agents now enforce the 11-rule workflow protocol
+
+**This protocol ensures**:
+- Test-first development (tests approved before implementation)
+- Professional git hygiene (4 mandatory checks)
+- Clean production code (no debug/print statements)
+- Proper code organization (no duplicates)
+- User decision involvement (options with pros/cons)
+- Copy-paste ready documentation (no placeholders)
+- Consistent virtual environment setup
+- Task tracking transparency
+
+**Total Lines**: 2,251 lines of comprehensive protocol documentation
+
+---
+
+#### [247ab2b](https://github.com/gagan114662/agency_agents/commit/247ab2b) - feat: Add Git Workflow Protocol with 4 mandatory checks
+**Date**: 2024-10-14
+
+**Tests Written FIRST** (TDD):
+- test_git_workflow.md with all 4 feature tests
+- Comprehensive test scenarios and validation
+
+**Features Implemented**:
+
+1. **Verify Remote Push (Not Local)**
+   - Check remote tracking
+   - Verify remote branch exists
+   - Confirm local/remote sync
+   - Prevent "pushed to GitHub" lies
+
+2. **Remove Unnecessary Files Before Commit**
+   - node_modules, __pycache__, .env cleanup
+   - Comprehensive .gitignore
+   - Pre-commit file scanning
+   - Build artifacts removal
+
+3. **Ensure Requirements File Exists**
+   - Language detection (Python, Node, PHP, Go, Rust)
+   - Validate requirements file presence
+   - Check file content validity
+   - Import/dependency matching
+
+4. **Validate Authentication Necessity**
+   - Question protocol before auth implementation
+   - Decision tree (8 questions)
+   - Document auth decision in project brief
+   - Prevent unnecessary auth complexity
+
+**Updated Engineering Agents**:
+- Senior Developer
+- Frontend Developer
+- Backend Architect
+- AI Engineer
+
+**Added Files**:
+- GIT-WORKFLOW-PROTOCOL.md (complete protocol)
+- tests/test_git_workflow.md (test suite)
+- .gitignore (comprehensive)
+
+This ensures proper git hygiene and prevents common mistakes.
+
+---
+
+#### [2164a54](https://github.com/gagan114662/agency_agents/commit/2164a54) - feat: Add comprehensive requirements gathering and test-first development
+**Date**: 2024-10-14
+
+**Major Features Added**:
+
+1. **Requirements Gathering Protocol** (MANDATORY before coding)
+   - 10 essential question categories
+   - Systematic questioning workflow
+   - Project brief generation
+   - User confirmation checkpoint
+
+2. **Test-First Development Standards**
+   - Comprehensive testing guidelines
+   - Language-specific examples (JS, Python, PHP, etc.)
+   - No hardcoded values in tests
+   - Import from actual implementations
+
+3. **Project Brief Template System**
+   - 16-section comprehensive template
+   - Technical stack documentation
+   - Data models and business logic
+   - Security, testing, deployment specs
+
+4. **Complete Test Suite**
+   - Requirements gathering tests (10 scenarios)
+   - Question protocol validation tests
+   - Project brief template tests
+
+5. **Updated Engineering Agents**
+   - Senior Developer
+   - Frontend Developer
+   - Backend Architect
+   - AI Engineer
+
+**All agents now MUST**:
+- Gather requirements FIRST (no premature coding)
+- Write tests BEFORE implementation
+- Create project briefs
+- Get user confirmation
+
+This ensures Claude Code has complete understanding before starting any project.
+
+---
+
+## 🎯 What This Achieves
+
+Your Claude Code engineering agents will now **automatically**:
+
+✅ Gather comprehensive requirements before any coding
+✅ Write tests first and get approval before implementation
+✅ Follow all 11 workflow rules without exceptions
+✅ Ask for approval at key checkpoints
+✅ Maintain clean, production-ready code
+✅ Track all tasks transparently in TODO.md
+✅ Use shared virtual environments correctly
+✅ Provide copy-paste ready commands
+✅ Present options with pros/cons at decision points
+✅ Validate math/logic with bash scripts
+✅ Ensure 100% test pass rate before deployment
+
+### Before vs After
+
+#### Before 😰
+- Agents jump straight into coding without requirements
+- No tests or tests written after implementation
+- Debug statements left in production code
+- Placeholders in documentation (`<your-path>`)
+- Unclear what tasks remain
+- Commits without user approval
+
+#### After 😎
+- Requirements gathered first, every time
+- Tests written and approved before code
+- Clean production code, zero debug statements
+- All commands copy-paste ready
+- Full task transparency in TODO.md
+- User controls all commits
+
+---
+
+## 🚀 Quick Start
+
+### 1. Update Your Agents
+
+The engineering agents in `~/.claude/agents/engineering/` have already been updated with the workflow protocol. When you use any of these agents in Claude Code, they will automatically follow all 11 rules.
+
+### 2. Use the Protocols
+
+When starting a new project with Claude Code:
 
 ```bash
-# Copy agents to your Claude Code directory
-cp -r agency-agents/* ~/.claude/agents/
-
-# Now activate any agent in your Claude Code sessions:
-# "Hey Claude, activate Frontend Developer mode and help me build a React component"
+# 1. Agent will automatically gather requirements first
+# 2. Agent will write tests and ask for approval
+# 3. Agent will follow all 11 workflow rules
+# 4. Agent will ask before creating git commits
 ```
 
-### Option 2: Use as Reference
+### 3. Verify Compliance
 
-Each agent file contains:
-- Identity & personality traits
-- Core mission & workflows
-- Technical deliverables with code examples
-- Success metrics & communication style
+Check that agents are following the protocol:
 
-Browse the agents below and copy/adapt the ones you need!
+```bash
+# Check TODO.md is being maintained
+cat TODO.md
 
----
+# Verify no print statements in production code
+grep -r "print(" src/
 
-## 🎨 The Agency Roster
+# Verify tests exist
+ls -la tests/
 
-### 💻 Engineering Division (7 Agents)
-
-Building the future, one commit at a time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, UI implementation, performance | Modern web apps, pixel-perfect UIs, Core Web Vitals optimization |
-| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | API design, database architecture, scalability | Server-side systems, microservices, cloud infrastructure |
-| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | Native and cross-platform mobile applications |
-| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML models, deployment, AI integration | Machine learning features, data pipelines, AI-powered apps |
-| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, infrastructure automation, cloud ops | Pipeline development, deployment automation, monitoring |
-| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Fast POC development, MVPs | Quick proof-of-concepts, hackathon projects, fast iteration |
-| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, advanced patterns | Complex implementations, architecture decisions |
-
-### 🎨 Design Division (6 Agents)
-
-Making it beautiful, usable, and delightful.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [UI Designer](design/design-ui-designer.md) | Visual design, component libraries, design systems | Interface creation, brand consistency, component design |
-| 🔍 [UX Researcher](design/design-ux-researcher.md) | User testing, behavior analysis, research | Understanding users, usability testing, design insights |
-| 🏛️ [UX Architect](design/design-ux-architect.md) | Technical architecture, CSS systems, implementation | Developer-friendly foundations, implementation guidance |
-| 🎭 [Brand Guardian](design/design-brand-guardian.md) | Brand identity, consistency, positioning | Brand strategy, identity development, guidelines |
-| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content | Compelling visual stories, brand storytelling |
-| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Personality, delight, playful interactions | Adding joy, micro-interactions, Easter eggs, brand personality |
-
-### 📢 Marketing Division (8 Agents)
-
-Growing your audience, one authentic interaction at a time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | Rapid user acquisition, viral loops, experiments | Explosive growth, user acquisition, conversion optimization |
-| 📝 [Content Creator](marketing/marketing-content-creator.md) | Multi-platform content, editorial calendars | Content strategy, copywriting, brand storytelling |
-| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | Real-time engagement, thought leadership | Twitter strategy, LinkedIn campaigns, professional social |
-| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | Viral content, algorithm optimization | TikTok growth, viral content, Gen Z/Millennial audience |
-| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | Visual storytelling, community building | Instagram strategy, aesthetic development, visual content |
-| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Authentic engagement, value-driven content | Reddit strategy, community trust, authentic marketing |
-| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, conversion optimization, discoverability | App marketing, store optimization, app growth |
-| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | Cross-platform strategy, campaigns | Overall social strategy, multi-platform campaigns |
-
-### 📊 Product Division (3 Agents)
-
-Building the right thing at the right time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile planning, feature prioritization | Sprint planning, resource allocation, backlog management |
-| 🔍 [Trend Researcher](product/product-trend-researcher.md) | Market intelligence, competitive analysis | Market research, opportunity assessment, trend identification |
-| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities |
-
-### 🎬 Project Management Division (5 Agents)
-
-Keeping the trains running on time (and under budget).
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | High-level orchestration, portfolio management | Multi-project oversight, strategic alignment, resource allocation |
-| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | Cross-functional coordination, timeline management | End-to-end project coordination, stakeholder management |
-| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | Day-to-day efficiency, process optimization | Operational excellence, team support, productivity |
-| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B tests, hypothesis validation | Experiment management, data-driven decisions, testing |
-| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | Realistic scoping, task conversion | Converting specs to tasks, scope management |
-
-### 🧪 Testing Division (7 Agents)
-
-Breaking things so users don't have to.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | Screenshot-based QA, visual proof | UI testing, visual verification, bug documentation |
-| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Evidence-based certification, quality gates | Production readiness, quality approval, release certification |
-| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Test evaluation, metrics analysis | Test output analysis, quality insights, coverage reporting |
-| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization | Speed testing, load testing, performance tuning |
-| 🔌 [API Tester](testing/testing-api-tester.md) | API validation, integration testing | API testing, endpoint verification, integration QA |
-| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Technology assessment, tool selection | Evaluating tools, software recommendations, tech decisions |
-| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Process analysis, workflow improvement | Process optimization, efficiency gains, automation opportunities |
-
-### 🛟 Support Division (6 Agents)
-
-The backbone of the operation.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 💬 [Support Responder](support/support-support-responder.md) | Customer service, issue resolution | Customer support, user experience, support operations |
-| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | Data analysis, dashboards, insights | Business intelligence, KPI tracking, data visualization |
-| 💰 [Finance Tracker](support/support-finance-tracker.md) | Financial planning, budget management | Financial analysis, cash flow, business performance |
-| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | System reliability, performance optimization | Infrastructure management, system operations, monitoring |
-| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Compliance, regulations, legal review | Legal compliance, regulatory requirements, risk management |
-| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries | Executive reporting, strategic communication, decision support |
-
-### 🥽 Spatial Computing Division (6 Agents)
-
-Building the immersive future.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | Spatial interaction design, immersive UX | AR/VR/XR interface design, spatial computing UX |
-| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, high-performance 3D | macOS spatial computing, Vision Pro native apps |
-| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, browser-based AR/VR | Browser-based immersive experiences, WebXR apps |
-| 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | Cockpit-based controls, immersive systems | Cockpit control systems, immersive control interfaces |
-| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Apple Vision Pro development | Vision Pro apps, spatial computing experiences |
-| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | Terminal integration, command-line tools | CLI tools, terminal workflows, developer tools |
-
-### 🎯 Specialized Division (3 Agents)
-
-The unique specialists who don't fit in a box.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | Multi-agent coordination, workflow management | Complex projects requiring multiple agent coordination |
-| 📊 [Data Analytics Reporter](specialized/data-analytics-reporter.md) | Business intelligence, data insights | Deep data analysis, business metrics, strategic insights |
-| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, code intelligence | Code intelligence systems, LSP implementation, semantic indexing |
+# Check git is clean
+git status
+```
 
 ---
 
-## 🎯 Real-World Use Cases
+## 📋 Protocol Compliance Checklist
 
-### Scenario 1: Building a Startup MVP
+Before completing ANY task, verify:
 
-**Your Team**:
-1. 🎨 **Frontend Developer** - Build the React app
-2. 🏗️ **Backend Architect** - Design the API and database
-3. 🚀 **Growth Hacker** - Plan user acquisition
-4. ⚡ **Rapid Prototyper** - Fast iteration cycles
-5. 🔍 **Reality Checker** - Ensure quality before launch
-
-**Result**: Ship faster with specialized expertise at every stage.
-
----
-
-### Scenario 2: Marketing Campaign Launch
-
-**Your Team**:
-1. 📝 **Content Creator** - Develop campaign content
-2. 🐦 **Twitter Engager** - Twitter strategy and execution
-3. 📸 **Instagram Curator** - Visual content and stories
-4. 🤝 **Reddit Community Builder** - Authentic community engagement
-5. 📊 **Analytics Reporter** - Track and optimize performance
-
-**Result**: Multi-channel coordinated campaign with platform-specific expertise.
-
----
-
-### Scenario 3: Enterprise Feature Development
-
-**Your Team**:
-1. 👔 **Senior Project Manager** - Scope and task planning
-2. 💎 **Senior Developer** - Complex implementation
-3. 🎨 **UI Designer** - Design system and components
-4. 🧪 **Experiment Tracker** - A/B test planning
-5. 📸 **Evidence Collector** - Quality verification
-6. 🔍 **Reality Checker** - Production readiness
-
-**Result**: Enterprise-grade delivery with quality gates and documentation.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-### Add a New Agent
-
-1. Fork the repository
-2. Create a new agent file in the appropriate category
-3. Follow the agent template structure:
-   - Frontmatter with name, description, color
-   - Identity & Memory section
-   - Core Mission
-   - Critical Rules (domain-specific)
-   - Technical Deliverables with examples
-   - Workflow Process
-   - Success Metrics
-4. Submit a PR with your agent
-
-### Improve Existing Agents
-
-- Add real-world examples
-- Enhance code samples
-- Update success metrics
-- Improve workflows
-
-### Share Your Success Stories
-
-Have you used these agents successfully? Share your story in the [Discussions](https://github.com/msitarzewski/agency-agents/discussions)!
-
----
-
-## 📖 Agent Design Philosophy
-
-Each agent is designed with:
-
-1. **🎭 Strong Personality**: Not generic templates - real character and voice
-2. **📋 Clear Deliverables**: Concrete outputs, not vague guidance
-3. **✅ Success Metrics**: Measurable outcomes and quality standards
-4. **🔄 Proven Workflows**: Step-by-step processes that work
-5. **💡 Learning Memory**: Pattern recognition and continuous improvement
-
----
-
-## 🎁 What Makes This Special?
-
-### Unlike Generic AI Prompts:
-- ❌ Generic "Act as a developer" prompts
-- ✅ Deep specialization with personality and process
-
-### Unlike Prompt Libraries:
-- ❌ One-off prompt collections
-- ✅ Comprehensive agent systems with workflows and deliverables
-
-### Unlike AI Tools:
-- ❌ Black box tools you can't customize
-- ✅ Transparent, forkable, adaptable agent personalities
-
----
-
-## 🎨 Agent Personality Highlights
-
-> "I don't just test your code - I default to finding 3-5 issues and require visual proof for everything."
->
-> — **Evidence Collector** (Testing Division)
-
-> "You're not marketing on Reddit - you're becoming a valued community member who happens to represent a brand."
->
-> — **Reddit Community Builder** (Marketing Division)
-
-> "Every playful element must serve a functional or emotional purpose. Design delight that enhances rather than distracts."
->
-> — **Whimsy Injector** (Design Division)
-
-> "Let me add a celebration animation that reduces task completion anxiety by 40%"
->
-> — **Whimsy Injector** (during a UX review)
+- [ ] **Rule 1**: Tests written and approved BEFORE implementation
+- [ ] **Rule 2**: Git commit checkpoint asked and completed properly
+- [ ] **Rule 3**: Logging standards followed (INFO level, no prints)
+- [ ] **Rule 4**: Bash validation scripts created for math/logic
+- [ ] **Rule 5**: Code organization checked (no duplicates, proper structure)
+- [ ] **Rule 6**: All tests run locally and pass (100%)
+- [ ] **Rule 7**: Production code clean (no TODOs, comments, debug)
+- [ ] **Rule 8**: User consulted on all major decisions
+- [ ] **Rule 9**: All commands are copy-paste ready (no placeholders)
+- [ ] **Rule 10**: Virtual environment properly configured
+- [ ] **Rule 11**: TODO.md updated with current status
 
 ---
 
 ## 📊 Stats
 
-- 🎭 **51 Specialized Agents** across 9 divisions
-- 📝 **10,000+ lines** of personality, process, and code examples
-- ⏱️ **Months of iteration** from real-world usage
-- 🌟 **Battle-tested** in production environments
-- 💬 **50+ requests** in first 12 hours on Reddit
+- 🎯 **4 Commits**: Complete development workflow implementation
+- 📝 **2,251 Lines**: Comprehensive protocol documentation
+- ✅ **11 Rules**: Mandatory workflow enforcement
+- 🧪 **11 Tests**: Comprehensive test suite with bash validation
+- 🤖 **4 Agents**: Updated engineering agents with workflow
+- 📦 **3 Protocols**: Requirements, Git, Test-First, and Workflow
+- 🐍 **Python 3.13.7**: Shared virtual environment setup
+- 🔧 **2 Projects**: aitutor and ipop cloned and configured
 
 ---
 
-## 🗺️ Roadmap
+## 🤝 Contributing
 
-- [ ] Interactive agent selector web tool
-- [ ] Multi-agent workflow examples
-- [ ] Video tutorials on agent design
-- [ ] Community agent marketplace
-- [ ] Agent "personality quiz" for project matching
-- [ ] Integration examples with popular tools
-- [ ] "Agent of the Week" showcase series
+This is a personal development workflow repository. Feel free to fork and adapt to your own needs!
+
+### To Adapt for Your Own Use
+
+1. Fork this repository
+2. Update virtual environment paths in Rule 10
+3. Modify project-specific requirements
+4. Customize agent behaviors as needed
+5. Add your own validation scripts
+
+---
+
+## 📖 Usage Examples
+
+### Example 1: Starting a New Feature
+
+```bash
+USER: "Add a shipping cost calculator to the app"
+
+AGENT:
+Step 1: Requirements Gathering (Rule 1 - Pre-requisite)
+- What weight units? (lbs, kg, oz)
+- How to calculate distance? (zip codes, GPS, manual?)
+- Pricing tiers or flat rate?
+[... 10+ questions covering all aspects]
+
+Step 2: Write Tests First (Rule 1)
+Creates tests/test_shipping_calculator.py
+"I've written 15 tests for the shipping calculator. May I proceed with implementation?"
+
+Step 3: Implementation (After Approval)
+Implements feature to make tests pass
+
+Step 4: Bash Validation (Rule 4)
+Creates tests/validation/test_shipping_calc.sh
+Validates calculations independently
+
+Step 5: Update TODO.md (Rule 11)
+Moves task to "Completed" section
+
+Step 6: Git Commit (Rule 2)
+"Feature complete. Would you like me to create a git commit?"
+```
+
+### Example 2: Code Review Check
+
+The agent will automatically verify:
+
+```bash
+# No print statements
+✅ grep -r "print(" src/  # Returns nothing
+
+# No TODO comments
+✅ grep -r "TODO" src/  # Returns nothing
+
+# All tests pass
+✅ pytest tests/ -v  # 100% pass rate
+
+# Requirements file exists
+✅ ls requirements.txt  # File exists
+
+# TODO.md is updated
+✅ cat TODO.md  # Shows current status
+```
 
 ---
 
 ## 📜 License
 
-MIT License - Use freely, commercially or personally. Attribution appreciated but not required.
+MIT License - Use freely, commercially or personally.
 
 ---
 
 ## 🙏 Acknowledgments
 
-Born from a Reddit discussion about AI agent specialization. Thanks to the community for the feedback, requests, and inspiration.
+Built with Claude Code using test-first development and following all 11 workflow rules.
 
-Special recognition to the 50+ Redditors who requested this within the first 12 hours - you proved there's demand for real, specialized AI agent systems.
+Special thanks to the MathematricksTrader project for inspiring these workflow standards.
 
 ---
 
-## 💬 Community
+## 💬 Repository Information
 
-- **GitHub Discussions**: [Share your success stories](https://github.com/msitarzewski/agency-agents/discussions)
-- **Issues**: [Report bugs or request features](https://github.com/msitarzewski/agency-agents/issues)
-- **Reddit**: Join the conversation on r/ClaudeAI
-- **Twitter/X**: Share with #TheAgency
+- **Repository**: https://github.com/gagan114662/agency_agents
+- **Latest Commit**: 3b4e6fe
+- **Status**: All tasks completed ✅
+- **Last Updated**: 2024-10-14
 
 ---
 
 ## 🚀 Get Started
 
-1. **Browse** the agents above and find specialists for your needs
-2. **Copy** the agents to `~/.claude/agents/` for Claude Code integration
-3. **Activate** agents by referencing them in your Claude conversations
-4. **Customize** agent personalities and workflows for your specific needs
-5. **Share** your results and contribute back to the community
+1. **Clone** this repository for reference
+   ```bash
+   git clone https://github.com/gagan114662/agency_agents.git
+   ```
+
+2. **Review** the protocols
+   - Read DEVELOPMENT-WORKFLOW-PROTOCOL.md
+   - Understand the 11 mandatory rules
+   - Check the test suite in tests/
+
+3. **Use** with Claude Code
+   - Your agents already have the workflow integrated
+   - They will automatically follow all rules
+   - No additional configuration needed
+
+4. **Adapt** for your projects
+   - Fork and modify for your needs
+   - Update paths and project-specific settings
+   - Add custom validation scripts
 
 ---
 
 <div align="center">
 
-**🎭 The Agency: Your AI Dream Team Awaits 🎭**
+**🤖 Development Workflow Protocol: Professional Development, Automatically Enforced 🤖**
 
-[⭐ Star this repo](https://github.com/msitarzewski/agency-agents) • [🍴 Fork it](https://github.com/msitarzewski/agency-agents/fork) • [🐛 Report an issue](https://github.com/msitarzewski/agency-agents/issues)
+[⭐ Star this repo](https://github.com/gagan114662/agency_agents) • [🍴 Fork it](https://github.com/gagan114662/agency_agents/fork) • [📖 Read the Docs](DEVELOPMENT-WORKFLOW-PROTOCOL.md)
 
-Made with ❤️ by the community, for the community
+Built with ❤️ and test-first development
 
 </div>
