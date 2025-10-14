@@ -59,3 +59,6 @@ temp/
 
 # Git
 .git/
+
+# Nested Git Repositories (exclude third-party agent templates)
+agency-agents/
