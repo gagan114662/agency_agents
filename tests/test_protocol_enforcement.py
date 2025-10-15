@@ -67,15 +67,94 @@ class TestTestFirstDevelopment:
         assert 'tests' in result['message'].lower()
 
     def test_tests_approved_allows_implementation(self):
-        """After tests written and approved, allow implementation"""
+        """After tests written, reflected, and approved, allow implementation"""
         enforcer = ProtocolEnforcer()
 
-        # Mark tests as written and approved
+        # Mark tests as written, reflection complete, and approved
         enforcer.mark_tests_written(task_id='test-123')
+        enforcer.mark_reflection_complete(task_id='test-123')
         enforcer.mark_tests_approved(task_id='test-123')
 
         result = enforcer.check_can_implement(task_id='test-123')
         assert result['allowed'] is True
+
+
+class TestSelfReflectionAfterTests:
+    """Test Self-Reflection Cue After Test Writing (MANDATORY)"""
+
+    def test_reflection_required_after_tests_written(self):
+        """Should require self-reflection after tests are written"""
+        enforcer = ProtocolEnforcer()
+
+        # Mark tests as written
+        enforcer.mark_tests_written(task_id='test-reflection-1')
+
+        # Check if reflection is required
+        result = enforcer.check_reflection_required(task_id='test-reflection-1')
+        assert result['required'] is True
+        assert 'reflect' in result['message'].lower()
+
+    def test_reflection_cue_provides_prompts(self):
+        """Should provide reflection prompts after tests written"""
+        enforcer = ProtocolEnforcer()
+
+        enforcer.mark_tests_written(task_id='test-reflection-2')
+
+        reflection_cue = enforcer.generate_reflection_cue(task_id='test-reflection-2')
+
+        assert isinstance(reflection_cue, dict)
+        assert 'prompts' in reflection_cue
+        assert len(reflection_cue['prompts']) >= 3
+        assert 'test_coverage' in str(reflection_cue).lower()
+
+    def test_reflection_marks_task_as_reflected(self):
+        """Should mark task as reflected after reflection"""
+        enforcer = ProtocolEnforcer()
+
+        enforcer.mark_tests_written(task_id='test-reflection-3')
+        enforcer.mark_reflection_complete(task_id='test-reflection-3')
+
+        result = enforcer.check_reflection_required(task_id='test-reflection-3')
+        assert result['required'] is False
+
+    def test_implementation_blocked_without_reflection(self):
+        """Implementation should be blocked if reflection not complete"""
+        enforcer = ProtocolEnforcer()
+
+        # Tests written but no reflection
+        enforcer.mark_tests_written(task_id='test-reflection-4')
+        enforcer.mark_tests_approved(task_id='test-reflection-4')
+
+        result = enforcer.check_can_implement(task_id='test-reflection-4')
+        assert result['allowed'] is False
+        assert 'reflection' in result['message'].lower()
+
+    def test_implementation_allowed_after_reflection(self):
+        """Implementation allowed after reflection complete"""
+        enforcer = ProtocolEnforcer()
+
+        # Complete workflow with reflection
+        enforcer.mark_tests_written(task_id='test-reflection-5')
+        enforcer.mark_reflection_complete(task_id='test-reflection-5')
+        enforcer.mark_tests_approved(task_id='test-reflection-5')
+
+        result = enforcer.check_can_implement(task_id='test-reflection-5')
+        assert result['allowed'] is True
+
+    def test_reflection_prompts_include_key_questions(self):
+        """Reflection prompts should include key self-assessment questions"""
+        enforcer = ProtocolEnforcer()
+
+        enforcer.mark_tests_written(task_id='test-reflection-6')
+        reflection = enforcer.generate_reflection_cue(task_id='test-reflection-6')
+
+        prompts = reflection['prompts']
+        prompt_text = ' '.join([p['question'] for p in prompts])
+
+        # Check for key reflection topics
+        assert any(word in prompt_text.lower() for word in ['coverage', 'test', 'edge'])
+        assert any(word in prompt_text.lower() for word in ['scenario', 'case'])
+        assert any(word in prompt_text.lower() for word in ['quality', 'comprehensive'])
 
 
 class TestGitCommitCheckpoint:

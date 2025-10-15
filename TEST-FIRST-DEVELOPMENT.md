@@ -12,12 +12,27 @@
 - Never use hardcoded values or mock final behavior
 - Tests define the contract and expected behavior
 
-### 2. Implement Feature
+### 2. Self-Reflect on Tests (MANDATORY)
+**After writing tests, ALWAYS reflect on test quality before implementation:**
+
+Review these critical questions:
+1. **Coverage**: Does your test suite provide comprehensive coverage of all requirements?
+2. **Edge Cases**: Have you tested all edge cases and boundary conditions?
+3. **Scenarios**: Are there any scenarios or use cases that are not yet covered?
+4. **Quality**: Is the test quality sufficient to catch implementation bugs?
+5. **Assertions**: Are the test assertions clear and comprehensive?
+
+**This reflection step is REQUIRED and enforced by the protocol system.**
+- Implementation will be blocked until reflection is complete
+- Take time to improve tests based on reflection insights
+- Document any test gaps or limitations discovered
+
+### 3. Implement Feature
 - Write minimal code to make tests pass (Green phase)
 - Follow the test specifications exactly
 - Implement actual functionality, not shortcuts
 
-### 3. Refactor
+### 4. Refactor
 - Clean up code while keeping tests passing
 - Optimize performance and maintainability
 - Tests ensure refactoring doesn't break functionality
@@ -318,16 +333,22 @@ it('should add two numbers correctly', () => {
    - Test should fail because feature doesn't exist
    - Verify the test actually fails
 
-2. **GREEN**: Write minimal code to pass
+2. **REFLECT**: Self-assess test quality (MANDATORY)
+   - Review test coverage and edge cases
+   - Check for missing scenarios
+   - Improve tests based on reflection
+   - Mark reflection complete in protocol system
+
+3. **GREEN**: Write minimal code to pass
    - Implement just enough to make test pass
    - Don't over-engineer
 
-3. **REFACTOR**: Improve code quality
+4. **REFACTOR**: Improve code quality
    - Clean up implementation
    - Optimize performance
    - Ensure tests still pass
 
-4. **REPEAT**: For each new feature
+5. **REPEAT**: For each new feature
 
 ## 💡 Benefits of Test-First Development
 
@@ -338,6 +359,7 @@ it('should add two numbers correctly', () => {
 5. **Living Documentation**: Tests show how to use the code
 6. **Faster Debugging**: Tests isolate problems quickly
 7. **Regression Prevention**: Tests catch bugs when they're introduced
+8. **Quality Assurance**: Self-reflection catches test gaps before implementation
 
 ## 🎓 Remember
 
@@ -346,7 +368,8 @@ it('should add two numbers correctly', () => {
 - Tests should **fail first**, then pass after implementation
 - Tests should verify **real behavior**, not hardcoded values
 - Tests are **living documentation** that never goes stale
+- **Self-reflection on tests is MANDATORY** before implementation
 
 ---
 
-**All engineering agents MUST follow these test-first development standards.**
+**All engineering agents MUST follow these test-first development standards, including the mandatory self-reflection step.**

@@ -157,8 +157,9 @@ class TestProtocolComplianceWorkflow:
         result = enforcer.check_can_implement(task_id='test-workflow-2')
         assert result['allowed'] is False
 
-        # Write and approve tests
+        # Write tests, reflect, and approve
         enforcer.mark_tests_written(task_id='test-workflow-2')
+        enforcer.mark_reflection_complete(task_id='test-workflow-2')
         enforcer.mark_tests_approved(task_id='test-workflow-2')
 
         # Now implementation is allowed
@@ -177,6 +178,9 @@ class TestProtocolComplianceWorkflow:
         # Step 2: Write tests
         enforcer.mark_tests_written(task_id)
         assert enforcer.check_tests_written(task_id)['allowed']
+
+        # Step 2.5: Reflect on tests
+        enforcer.mark_reflection_complete(task_id)
 
         # Step 3: Get test approval
         enforcer.mark_tests_approved(task_id)
@@ -270,6 +274,7 @@ class TestRealWorldScenarios:
 
         # 5. Tests
         enforcer.mark_tests_written('dark-mode-feature')
+        enforcer.mark_reflection_complete('dark-mode-feature')
         enforcer.mark_tests_approved('dark-mode-feature')
 
         # 6. Implementation
@@ -304,6 +309,7 @@ class TestRealWorldScenarios:
         enforcer = ProtocolEnforcer()
         enforcer.mark_requirements_gathered('refactor-auth')
         enforcer.mark_tests_written('refactor-auth')
+        enforcer.mark_reflection_complete('refactor-auth')
         enforcer.mark_tests_approved('refactor-auth')
 
         result = enforcer.check_can_implement('refactor-auth')
@@ -347,6 +353,7 @@ class TestPerformanceInRealUsage:
         for feature_id in features:
             enforcer.mark_requirements_gathered(feature_id)
             enforcer.mark_tests_written(feature_id)
+            enforcer.mark_reflection_complete(feature_id)
             enforcer.mark_tests_approved(feature_id)
 
             result = enforcer.check_can_implement(feature_id)
@@ -385,6 +392,7 @@ class TestCompleteEndToEnd:
 
             # Tests
             enforcer.mark_tests_written(task_id)
+            enforcer.mark_reflection_complete(task_id)
             enforcer.mark_tests_approved(task_id)
 
             # Implementation

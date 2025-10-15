@@ -37,11 +37,17 @@ This protocol is **MANDATORY** for:
 1. User requests a feature or task
 2. Agent gathers requirements (see REQUIREMENTS-GATHERING-PROTOCOL.md)
 3. Agent writes comprehensive tests FIRST
-4. Agent asks user: "I've written tests for [feature]. May I proceed with implementation?"
-5. User reviews and approves tests
-6. ONLY THEN can agent begin implementation
+4. **Agent performs mandatory self-reflection on test quality** (NEW - MANDATORY)
+   - Review test coverage of all requirements
+   - Check for edge cases and boundary conditions
+   - Identify any missing scenarios
+   - Assess test quality and assertion strength
+   - Mark reflection complete in protocol system
+5. Agent asks user: "I've written and reviewed tests for [feature]. May I proceed with implementation?"
+6. User reviews and approves tests
+7. ONLY THEN can agent begin implementation
 
-**Why**: Ensures mutual understanding of expected behavior before time is invested in implementation.
+**Why**: Ensures mutual understanding of expected behavior AND comprehensive test quality before time is invested in implementation.
 
 **Validation**:
 ```bash
@@ -798,46 +804,53 @@ Step 1: Requirements Gathering (REQUIREMENTS-GATHERING-PROTOCOL.md)
 Step 2: Write Tests FIRST (Rule 1 - Pre-Work Test Approval)
 - Create tests/test_shipping_calculator.py
 - Write comprehensive test cases
-- Ask user: "I've written tests for shipping calculator. May I proceed?"
 
-Step 3: Get User Approval
+Step 3: Self-Reflect on Tests (MANDATORY - NEW)
+- Review test coverage against requirements
+- Check edge cases (zero weight, negative values, etc.)
+- Verify all pricing tiers are tested
+- Assess assertion quality
+- Mark reflection complete in protocol system
+
+Step 4: Get User Approval
+- Ask user: "I've written and reviewed tests for shipping calculator. May I proceed?"
 - Wait for user confirmation
 - Address any test modifications
 
-Step 4: Implement Feature (Test-First Development)
+Step 5: Implement Feature (Test-First Development)
 - Create src/services/shipping_calculator.py
 - Implement to make tests pass
 - Follow logging standards (Rule 3 - INFO level only)
 
-Step 5: Create Bash Validation (Rule 4)
+Step 6: Create Bash Validation (Rule 4)
 - Create tests/validation/test_shipping_calc.sh
 - Validate math calculations independently
 
-Step 6: Verify Code Organization (Rule 5)
+Step 7: Verify Code Organization (Rule 5)
 - Ensure no duplicate functions
 - Place in correct service directory
 - Single responsibility principle
 
-Step 7: Local Testing (Rule 6)
+Step 8: Local Testing (Rule 6)
 - Run pytest tests/
 - Verify 100% pass rate
 - Check coverage threshold
 
-Step 8: Clean Production Code (Rule 7)
+Step 9: Clean Production Code (Rule 7)
 - Remove any debug statements
 - Remove commented-out code
 - Remove TODOs
 
-Step 9: Update TODO.md (Rule 11)
+Step 10: Update TODO.md (Rule 11)
 - Move "Add shipping calculator" to Completed
 - Update timestamp
 
-Step 10: Git Commit Checkpoint (Rule 2)
+Step 11: Git Commit Checkpoint (Rule 2)
 - Ask user: "Feature complete. Create git commit?"
 - Run Git Workflow Protocol checks (Rule 2)
 - Create descriptive commit message
 
-Step 11: User provides copy-paste commands (Rule 9)
+Step 12: User provides copy-paste commands (Rule 9)
 "You can test the feature with:
 source /Users/gagan/Desktop/gagan_projects/venv/bin/activate
 python -c 'from src.services.shipping_calculator import calculate_shipping; print(calculate_shipping(5.5, 100))'"

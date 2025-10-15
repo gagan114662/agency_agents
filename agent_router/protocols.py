@@ -89,6 +89,62 @@ class ProtocolEnforcer:
             self._task_states[task_id] = {}
         self._task_states[task_id]['tests_approved'] = True
 
+    # Self-Reflection After Test Writing (MANDATORY)
+    def check_reflection_required(self, task_id: str) -> Dict:
+        """Check if self-reflection is required after test writing"""
+        state = self._task_states.get(task_id, {})
+
+        tests_written = state.get('tests_written', False)
+        reflection_complete = state.get('reflection_complete', False)
+
+        if tests_written and not reflection_complete:
+            return {
+                'required': True,
+                'message': 'Self-reflection required after writing tests'
+            }
+        else:
+            return {
+                'required': False,
+                'message': 'Reflection complete or tests not written'
+            }
+
+    def generate_reflection_cue(self, task_id: str) -> Dict:
+        """Generate reflection prompts with key self-assessment questions"""
+        prompts = [
+            {
+                'question': 'Does your test suite provide comprehensive coverage of all requirements?',
+                'focus': 'test_coverage'
+            },
+            {
+                'question': 'Have you tested all edge cases and boundary conditions?',
+                'focus': 'edge_cases'
+            },
+            {
+                'question': 'Are there any scenarios or use cases that are not yet covered?',
+                'focus': 'scenarios'
+            },
+            {
+                'question': 'Is the test quality sufficient to catch implementation bugs?',
+                'focus': 'quality'
+            },
+            {
+                'question': 'Are the test assertions clear and comprehensive?',
+                'focus': 'assertions'
+            }
+        ]
+
+        return {
+            'task_id': task_id,
+            'prompts': prompts,
+            'message': 'Review these questions before proceeding to implementation'
+        }
+
+    def mark_reflection_complete(self, task_id: str):
+        """Mark that reflection has been completed for a task"""
+        if task_id not in self._task_states:
+            self._task_states[task_id] = {}
+        self._task_states[task_id]['reflection_complete'] = True
+
     def mark_implementation_complete(self, task_id: str):
         """Mark implementation as complete"""
         if task_id not in self._task_states:
@@ -118,12 +174,23 @@ class ProtocolEnforcer:
         # Check requirements
         requirements_ready = state.get('requirements_gathered', False)
 
-        # If tests are ready, allow implementation (tests are the primary gate)
-        if tests_ready:
+        # Check reflection complete (MANDATORY after tests are written)
+        tests_written = state.get('tests_written', False)
+        reflection_complete = state.get('reflection_complete', False)
+
+        # If tests are written, reflection is REQUIRED before implementation
+        if tests_written and not reflection_complete:
+            return {
+                'allowed': False,
+                'message': 'Self-reflection required after writing tests before implementation'
+            }
+
+        # If tests are ready and reflection is complete, allow implementation
+        if tests_ready and (not tests_written or reflection_complete):
             return {'allowed': True, 'message': 'Can proceed with implementation'}
 
         # If nothing is set, prioritize requirements message
-        if not requirements_ready and not state.get('tests_written', False):
+        if not requirements_ready and not tests_written:
             return {
                 'allowed': False,
                 'message': 'Requirements must be gathered before implementation'
