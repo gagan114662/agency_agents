@@ -22,24 +22,60 @@ This repository contains a comprehensive **Development Workflow Protocol** that 
 
 ---
 
-## 📚 Repository Contents
+## 📚 Repository Structure
 
-### Protocol Documentation (2,251 Lines Total)
+```
+agency_agents/
+├── agents/                    # All agent definitions (51 agents)
+│   ├── design/               # 6 design agents
+│   ├── engineering/          # 7 engineering agents
+│   ├── marketing/            # 8 marketing agents
+│   ├── product/              # 3 product agents
+│   ├── project-management/   # 5 PM agents
+│   ├── spatial-computing/    # 6 XR/spatial agents
+│   ├── specialized/          # 3 specialized agents
+│   ├── support/              # 6 support agents
+│   └── testing/              # 7 testing agents
+├── protocols/                 # Protocol documentation (2,849 lines)
+│   ├── REQUIREMENTS-GATHERING-PROTOCOL.md (463 lines)
+│   ├── TEST-FIRST-DEVELOPMENT.md (352 lines)
+│   ├── GIT-WORKFLOW-PROTOCOL.md (858 lines)
+│   └── DEVELOPMENT-WORKFLOW-PROTOCOL.md (932 lines)
+├── tests/                     # Test files and validation scripts
+├── templates/                 # Project templates
+├── TODO.md                    # Project tracking
+├── README.md                  # This file
+├── CONTRIBUTING.md            # Contribution guidelines
+└── LICENSE                    # MIT License
+```
 
-1. **[DEVELOPMENT-WORKFLOW-PROTOCOL.md](DEVELOPMENT-WORKFLOW-PROTOCOL.md)** (932 lines)
+### Protocol Documentation
+
+**Location**: `protocols/` directory (also installed globally in `~/.claude/`)
+
+1. **[protocols/DEVELOPMENT-WORKFLOW-PROTOCOL.md](protocols/DEVELOPMENT-WORKFLOW-PROTOCOL.md)** (932 lines)
    - Complete implementation of all 11 mandatory workflow rules
    - Bash validation scripts for each rule
    - Real-world examples and enforcement guidelines
    - Quick reference commands and checklists
 
-2. **[tests/test_development_workflow.md](tests/test_development_workflow.md)** (1,183 lines)
-   - 11 comprehensive test scenarios
-   - Pass/fail criteria for each test
-   - Bash validation scripts included
-   - Edge case coverage
+2. **[protocols/REQUIREMENTS-GATHERING-PROTOCOL.md](protocols/REQUIREMENTS-GATHERING-PROTOCOL.md)** (463 lines)
+   - 10 essential question categories
+   - Systematic requirements gathering workflow
+   - Project brief generation templates
 
-3. **[TODO.md](TODO.md)** (136 lines)
-   - Project tracking with In Progress/Pending/Completed sections
+3. **[protocols/TEST-FIRST-DEVELOPMENT.md](protocols/TEST-FIRST-DEVELOPMENT.md)** (352 lines)
+   - Test-first examples for all major languages
+   - Anti-patterns to avoid
+   - Coverage requirements
+
+4. **[protocols/GIT-WORKFLOW-PROTOCOL.md](protocols/GIT-WORKFLOW-PROTOCOL.md)** (858 lines)
+   - 4 mandatory git checks before every commit
+   - Remote push verification
+   - File cleanup automation
+
+5. **[TODO.md](TODO.md)** (Project tracking)
+   - In Progress/Pending/Completed sections
    - Complete milestone tracking
    - Task completion history
 
